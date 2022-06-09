@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+.name__container {
+    display: grid;
+    grid-template-columns: 39% 22% 39%;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    transition: transform .15s linear;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+ul li:nth-child(even) {
+    transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+}
+
+ul li:nth-child(3n) {
+    transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+}
+
+ul li:nth-child(5n) {
+    transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+}
+
+ul li:hover, ul li:focus {
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+}
+  
+ul li {
+    margin:1em;
+}
+
+.name__actions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    align-items: center;
+    padding: 1rem;
+    background-size: contain;
+    max-height: 10rem;
+}
+
+.name__btn {
+    background-color: rgba(255, 255, 255, 0.693);
+    padding: .5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.name__btn:hover {
+    transition: 0.2s;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.name__btn:active {
+    opacity: .5;
+    transition: 0.2s;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.paper {
+    --paper-dark: #e5c93d;
+    --paper-color: #ffed87;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 325px;
+    min-height: 175px;
+    background: linear-gradient(
+        135deg,
+        var(--paper-dark),
+        30%,
+        var(--paper-color)
+    );
+    box-shadow: 3px 3px 2px var(--paper-shadow);
+    transform: rotate(10deg);
+    transform-origin: top left;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+p {
+    margin: auto;
+    font-size: 70px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.pin {
+    --pin-color: #d02627;
+    --pin-dark: #9e0608;
+    --pin-light: #fc7e7d;
+  
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    height: 50px;
+}
+
+.shadow {
+    position: absolute;
+    top: 18px;
+    left: -8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: radial-gradient(var(--paper-shadow), 20%, rgba(201, 191, 141, 0));
+}
+
+.metal {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(to right, #808080, 40%, #eae8e8, 50%, #808080);
+    border-radius: 0 0 30% 30%;
+    transform: rotate(50deg);
+    transform-origin: bottom left;
+    top: 15px;
+    border-bottom: 1px solid #808080;
+  }
+  
+  .bottom-circle {
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--pin-color);
+    background: radial-gradient(
+      circle at bottom right,
+      var(--pin-light),
+      25%,
+      var(--pin-dark),
+      90%,
+      var(--pin-color)
+    );
+  }
+  
+  /* Barrel */
+  .bottom-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 30px;
+    transform: rotate(55deg);
+    transform-origin: 100% 100%;
+    border-radius: 0 0 40% 40%;
+    background: linear-gradient(
+      to right,
+      var(--pin-dark),
+      30%,
+      var(--pin-color),
+      90%,
+      var(--pin-light)
+    );
+  }
+  
+  /* Top circle */
+  .bottom-circle::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at right,
+      var(--pin-light),
+      30%,
+      var(--pin-color),
+      var(--pin-dark) 80%
+    );
+  }
+  
+

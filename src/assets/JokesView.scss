@@ -1,0 +1,185 @@
+.jokes__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .filter__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    padding-top: 1rem;
+  }
+  
+  .jokes__mode {
+    text-align: center;
+    padding-top: 1.5rem;
+    max-width: fit-content;
+    margin: 0.5rem auto;
+  }
+  
+  .form {
+    top: 20px;
+    left: 40%;
+    z-index: 2;
+  }
+  
+  .filter__btn {
+    align-items: center;
+    appearance: none;
+    background-color: #fcfcfd;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395a;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 24px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.25s, transform 0.25s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 12px;
+  }
+  
+  .filter__btn:focus {
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  }
+  
+  .filter__btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .filter__btn:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  .jokes__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    row-gap: 0.5rem;
+    padding-top: 1rem;
+  }
+  
+  .joke__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+    width: 100%;
+    margin: 5px auto;
+    background: #00bfb6;
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: box-shadow 0.5s, transform 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .joke__box:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #020202 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .sb1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #00bfb6;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00bfb6;
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 6px;
+  }
+  
+  .sb2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #00bfb6;
+    border-top: 10px solid #00bfb6;
+    border-bottom: 10px solid transparent;
+    left: -19px;
+    top: 6px;
+  }
+  
+  .active {
+    background-color: #c8f2eb;
+  }
+  
+  .joke__flags {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.4rem;
+  }
+  
+  .joke__flag {
+    align-items: center;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395a;
+    justify-content: center;
+    line-height: 1;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.5s, transform 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    font-size: 11px;
+    background-color: rgb(221, 103, 103);
+  }
+  
+  .joke__flag-wrapper {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  
+  .safe {
+    background-color: #c8f2eb;
+  }
+  
+  .dark {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
