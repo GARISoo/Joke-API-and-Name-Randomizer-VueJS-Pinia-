@@ -1,6 +1,7 @@
 <template>
   <div class="name__container">
     <div class="name__unselected">
+      <h1>Names In Line</h1>
       <ul>
         <li v-for="name in getAllNames" :key="name">
           {{ name }}
@@ -29,6 +30,7 @@
     </div>
 
     <div class="name__selected">
+      <h1>Selected Names</h1>
       <ul>
         <li v-for="name in getSelectedNames" :key="name">
           {{ name }}
